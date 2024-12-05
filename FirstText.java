@@ -10,6 +10,8 @@ package com.mycompany.firsttext;
  */
 
 import java.util.*;
+import javax.swing.*;
+import java.awt.*;
 
 public class FirstText {
 
@@ -110,7 +112,7 @@ public class FirstText {
                             
                             // enemy reaction
                             
-                            if ((currentEnemy.getRHP() > 0) && (enemyReact = true)){
+                            if ((currentEnemy.getRHP() > 0) && (enemyReact == true)){
                                 int dmg = currentEnemy.damageCalc(currentEnemy.getATK(), player.getATK());
                                 player.setRHP(player.getRHP() - dmg);
                                 System.out.println("The " + currentEnemy.getName() + " attacked and dealt " + dmg + " damage");
@@ -137,8 +139,7 @@ public class FirstText {
 }
 
 
-
-// player class //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+////////////////// PLAYER CLASS //////////////////////////// PLAYER CLASS ///////////////////////////////////////////////// PLAYER CLASS /////////////////////////////////////////////
 
 class Player {
         
@@ -261,13 +262,13 @@ class Player {
     return "Player at (" + coordinates.get(0) + ", " + coordinates.get(1) + ")";
     }
 }
-// standard enemy class ////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//////////////////// STANDARD ENEMY CLASS ///////////////////////////  STANDARD ENEMY CLASS ///////////////////////////////// STANDARD ENEMY CLASS /////////////////////
 
 class Enemy {
     
     // static list of enemies
-    
-    private static List<Enemy> allEnemies = new ArrayList<>();
+   
+    private static java.util.List<Enemy> allEnemies = new java.util.ArrayList<>();
     
     // initialize
     private ArrayList<Integer> coordinates;
@@ -385,7 +386,7 @@ class Enemy {
     
     // retrieve enemy list
     
-    public static List<Enemy> getAllEnemies(){
+    public static java.util.List<Enemy> getAllEnemies(){
         return allEnemies;
     }
     
@@ -415,9 +416,24 @@ class Enemy {
     }
 }
 
+///////////////// DISPLAY /////////////////////////// DISPLAY ////////////////////////////////////////// DISPLAY /////////////////////////////////////////////////////////////////
+
+
+
+
+
+
+
+
+
+
+
+
+
 // random enemy spawn / respawns
 // enemy distance compass
 // levels
 // visible map
+// items
 // bosses
 // specific areas
