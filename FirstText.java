@@ -1,7 +1,3 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- */
-
 package com.mycompany.firsttext;
 
 /**
@@ -137,7 +133,6 @@ public class FirstText {
         }        
     }             
 }
-
 
 ////////////////// PLAYER CLASS //////////////////////////// PLAYER CLASS ///////////////////////////////////////////////// PLAYER CLASS /////////////////////////////////////////////
 
